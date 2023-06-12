@@ -1,0 +1,31 @@
+{
+  "name": "testcypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "satoryuu",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.14.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-plugin-snapshots": "^1.4.4",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true
+    },
+    "dependencies": {
+      "@badeball/cypress-cucumber-preprocessor": "latest"
+    },
+    "cypress-cucumber-preprocessor": {
+      "json": {
+        "enabled": true
+      }
+    }
+  }
+}
