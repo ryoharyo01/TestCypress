@@ -1,16 +1,7 @@
-import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
+import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 
-Given('Click PIM', () => {
-  cy.get(':nth-child(2) > .oxd-main-menu-item').click();
-});
-
-When('Search name', () => {
-  cy.get(':nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-autocomplete-wrapper > .oxd-autocomplete-text-input > input').type('Robert Davis')
-  cy.get('.oxd-form-actions > .oxd-button--secondary').click({force: true})
-});
-
-When('Click action edit', () => {
-  cy.get('.oxd-table-cell-actions > :nth-child(2)').click()
+beforeEach(function () {
+  cy.login();
 });
 
 When('Input form employee with new data', () => {

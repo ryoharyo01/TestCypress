@@ -24,3 +24,10 @@ import 'cypress-file-upload';
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', () => {
+  cy.visit('https://opensource-demo.orangehrmlive.com/');
+  cy.get('[name="username"]').type('admin');
+  cy.get('[name="password"]').type('admin123');
+  cy.get('.oxd-button').click();
+});
