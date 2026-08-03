@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\cypress\\e2e\\4-upload_file\\upload_file.cy.js"
+            "program": "${workspaceFolder}/cypress/support/step_definitions/4-upload_step.cy.js"
         }
     ]
 }

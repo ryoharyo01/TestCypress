@@ -1,15 +1,4 @@
-import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
-beforeEach(function() {
-    cy.visit('https://opensource-demo.orangehrmlive.com/');
-    cy.get('[name="username"]').type('admin') 
-  cy.get('[name="password"]').type('admin123')
-  cy.get('.oxd-button').click()
-});
-
-Given('Click PIM', () => {
-    cy.wait(3000);
-  cy.get(':nth-child(2) > .oxd-main-menu-item').click();
-});
+import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 When('Click button add', () => {
   cy.get('.orangehrm-header-container > .oxd-button').click();
@@ -27,8 +16,5 @@ When('Click submit', () => {
 });
 
 Then('Successfully add employee', () => {
-    cy.get('.oxd-text--toast-title').should('be.visible');
-  });
-  
-  
-    
+  cy.get('.oxd-text--toast-title').should('be.visible');
+});

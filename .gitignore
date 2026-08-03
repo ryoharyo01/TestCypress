@@ -1,2 +1,6 @@
 node_modules
 cypress/ffmpeg.exe
+cypress/videos
+cypress/screenshots
+cypress/downloads
+target
