@@ -1,6 +1,7 @@
 import { Given, When } from 'cypress-cucumber-preprocessor/steps';
 
 Given('Click PIM', () => {
+  cy.login();
   cy.wait(3000);
   cy.get(':nth-child(2) > .oxd-main-menu-item').click();
 });

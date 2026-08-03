@@ -2,10 +2,6 @@ import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 import 'cypress-file-upload';
 const imageFile = 'sample.jpg'
 
-beforeEach(function () {
-  cy.login();
-});
-
 When('Upload photo employee', () => {
   cy.get('.orangehrm-edit-employee-image').click();
   cy.wait(3000);

@@ -1,9 +1,5 @@
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 
-beforeEach(function () {
-  cy.login();
-});
-
 When('Click button add', () => {
   cy.get('.orangehrm-header-container > .oxd-button').click();
 });

@@ -1,9 +1,5 @@
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 
-beforeEach(function () {
-  cy.login();
-});
-
 When('Input form employee with new data', () => {
   cy.get(':nth-child(3) > :nth-child(1) > :nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('222222')
   cy.get(':nth-child(3) > :nth-child(2) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-input').clear().type('6666666')

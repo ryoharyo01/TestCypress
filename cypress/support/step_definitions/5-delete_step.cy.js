@@ -1,9 +1,5 @@
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 
-beforeEach(function () {
-  cy.login();
-});
-
 When('Click action delete', () => {
     cy.get('.oxd-table-cell-actions > :nth-child(1)').click();
     cy.get('.oxd-button--label-danger').click();
